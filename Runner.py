@@ -48,17 +48,17 @@ score = 0
 screen = pygame.display.set_mode((800,400))
 pygame.display.set_caption('Python Runner')
 clock = pygame.time.Clock()
-text_font = pygame.font.Font('D:\Projetos\Python\Runner\Assets/font/Pixeltype.ttf',50)
+text_font = pygame.font.Font('Assets/font/Pixeltype.ttf',50)
 game_active = False
 start_time = 0
 
 # Background surfaces
-bg1_surface = pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\BG\Bg1.png').convert_alpha()
+bg1_surface = pygame.image.load('Assets\graphics\BG\Bg1.png').convert_alpha()
 bg1_x_pos = 0 
-bg2_surface = pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\BG\Bg2.png').convert_alpha()
+bg2_surface = pygame.image.load('Assets\graphics\BG\Bg2.png').convert_alpha()
 bg2_x_pos = 0
-bg3_surface = pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\BG\Bg3.png').convert_alpha()
-ground_surface = pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\ground.png').convert()
+bg3_surface = pygame.image.load('Assets\graphics\BG\Bg3.png').convert_alpha()
+ground_surface = pygame.image.load('Assets\graphics\ground.png').convert()
 ground_x_pos = 0
 
 # Textos
@@ -66,14 +66,14 @@ ground_x_pos = 0
 
 
 # Obstaculos
-snail_frame_1 = pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\snail\snail1.png').convert_alpha()
-snail_frame_2 = pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\snail\snail2.png').convert_alpha()
+snail_frame_1 = pygame.image.load('Assets\graphics\snail\snail1.png').convert_alpha()
+snail_frame_2 = pygame.image.load('Assets\graphics\snail\snail2.png').convert_alpha()
 snail_frames = [snail_frame_1,snail_frame_2]
 snail_index = 0
 snail_surf = snail_frames[snail_index]
 
-fly_frame_1 = pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\Fly\Fly1.png').convert_alpha()
-fly_frame_2 = pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\Fly\Fly2.png').convert_alpha()
+fly_frame_1 = pygame.image.load('Assets\graphics\Fly\Fly1.png').convert_alpha()
+fly_frame_2 = pygame.image.load('Assets\graphics\Fly\Fly2.png').convert_alpha()
 fly_frames = [fly_frame_1,fly_frame_2]
 fly_index = 0
 fly_surf = fly_frames[fly_index]
@@ -81,25 +81,25 @@ fly_surf = fly_frames[fly_index]
 obstacle_rect_list = []
 
 # Player
-player_walk_1 = pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\player\player_walk_1.png').convert_alpha()
-player_walk_2 = pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\player\player_walk_2.png').convert_alpha()
+player_walk_1 = pygame.image.load('Assets\graphics\player\player_walk_1.png').convert_alpha()
+player_walk_2 = pygame.image.load('Assets\graphics\player\player_walk_2.png').convert_alpha()
 player_walk = [player_walk_1, player_walk_2]
 player_index = 0
-player_jump =  pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\player\jump.png').convert_alpha()
+player_jump =  pygame.image.load('Assets\graphics\player\jump.png').convert_alpha()
 
 player_surf = player_walk[player_index]
 player_rect = player_surf.get_rect(midbottom = (80,300))
 player_g = 0
 
-jump_sound = pygame.mixer.Sound('D:\Projetos\Python\Runner\Assets\Audio\jump.mp3')
+jump_sound = pygame.mixer.Sound('Assets\Audio\jump.mp3')
 jump_sound.set_volume(0.2)
 
-bg_music = pygame.mixer.Sound('D:\Projetos\Python\Runner\Assets\Audio\music.mp3')
+bg_music = pygame.mixer.Sound('Assets\Audio\music.mp3')
 bg_music.set_volume(0.4)
 bg_music_c = False
 
 # Menu
-player_stand = pygame.image.load('D:\Projetos\Python\Runner\Assets\graphics\player\player_stand.png').convert_alpha()
+player_stand = pygame.image.load('Assets\graphics\player\player_stand.png').convert_alpha()
 player_stand = pygame.transform.scale2x(player_stand)
 player_stand_rect = player_stand.get_rect(center = (400,200))
 
