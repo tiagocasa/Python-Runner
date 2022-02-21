@@ -94,7 +94,7 @@ player_g = 0
 jump_sound = pygame.mixer.Sound('D:\Projetos\Python\Runner\Assets\Audio\jump.mp3')
 jump_sound.set_volume(0.2)
 
-bg_music = pygame.mixer.Sound('D:\Projetos\Python\Runner\Assets\Audio\music.wav')
+bg_music = pygame.mixer.Sound('D:\Projetos\Python\Runner\Assets\Audio\music.mp3')
 bg_music.set_volume(0.4)
 bg_music_c = False
 
